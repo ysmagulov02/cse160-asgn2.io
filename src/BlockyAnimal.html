@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Blocky Animal (Twitter Bird)</title>
+</head>
+<body onload="main()">
+  <header>
+    <h1>Yernar Smagulov (ysmagulo@ucsc.edu)</h1>
+  </header>
+  
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+  <p>
+
+  <!-- <p id="numdot">XXX</p> -->
+
+  <p id="performanceIndicator">Performance: </p>
+
+
+  <p>
+    Head <input type="range" min="0" max="20" value="0" class="slider" id="headSlide">
+    Animation: 
+    <button type="button" id="animationHeadOnButton">ON</button>
+    <button type="button" id="animationHeadOffButton">OFF</button>
+
+  <p>
+    Scapulars <input type="range" min="-30" max="30" value="0" class="slider" id="ScapularSlide">
+    Animation: 
+    <button type="button" id="animationScapularOnButton">ON</button>
+    <button type="button" id="animationScapularOffButton">OFF</button>
+
+  <p>
+    Wings <input type="range" min="-90" max="90" value="0" class="slider" id="WingsSlide">
+    Animation: 
+    <button type="button" id="animationWingsOnButton">ON</button>
+    <button type="button" id="animationWingsOffButton">OFF</button>
+  <p>
+
+    <!-- Magenta <input type="range" min="-45" max="45" value="0" class="slider" id="magentaSlide">
+    Animation: 
+    <button type="button" id="animationMagentaOnButton">ON</button>
+    <button type="button" id="animationMagentaOffButton">OFF</button>
+  <p>
+    Yellow <input type="range" min="-45" max="45" value="0" class="slider" id="yellowSlide">
+    Animation: 
+    <button type="button" id="animationYellowOnButton">ON</button>
+    <button type="button" id="animationYellowOffButton">OFF</button>
+
+  <p> -->
+    <!-- Camera Angle <input type="range" min="0" max="360" value="180" class="slider" id="angleSlide"> -->
+  </p>
+  <label>Camera (X)</label> <input type="range" id="x_angle" name="x_angle" min="-180" max="180" value="0" class="angleSlide">
+	<label>Camera (Y)</label> <input type="range" id="y_angle" name="y_angle" min="-180" max="180" value="0" class="angleSlide">
+	<label>Camera (Z)</label><input type="range" id="z_angle" name="z_angle" min="-180" max="180" value="0" class="angleSlide">
+	</div>
+
+
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../lib/cuon-matrix-cse160.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Point.js"></script>
+  <script src="BlockyAnimal.js"></script>
+  <script src="pyramid.js"></script>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <small>&copy; 2024 Yernar Smagulov</small>
+  </footer>
+</body>
+</html>
+
+
